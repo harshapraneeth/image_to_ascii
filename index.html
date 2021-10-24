@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image2Ascii</title>
+
+    <style>
+
+        #input_image{
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            width: 500px;
+        }
+
+        #input_div, #canvas_div, #pre_div, #output_type_div, #output_dimension_div{
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        #output_type_div input[type="button"]
+        {
+            margin: 0px 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="input_div">
+        <input type="file" id="input_image" />
+    </div>
+
+    <div id="output_dimension_div">
+        max-size: <input type="range" min="50" max="1000" value="300" id="output_dim" oninput="show_range()" /> <span id="range_val">300</span>
+    </div>
+
+    <div id="output_type_div">
+        <input type="radio" id="output_type_ascii" name="output_type" value="ascii" checked>
+        <label for="output_type_ascii">Ascii</label>
+
+        <input type="radio" id="output_type_image" name="output_type" value="image">
+        <label for="output_type_image">Image</label>
+
+        <input type="button" value="convert" onclick="convert()"/>
+    </div>
+
+    <div id="canvas_div">
+        <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+
+    <div id="output_div"></div>
+
+    <div id="pre_div">
+        <pre id="ascii_output" style="font-size: 8px;"></pre>
+    </div>   
+
+    <script src="html2canvas.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
