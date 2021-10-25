@@ -35,3 +35,11 @@ The language of choice is Javascript because it allows me to share the project a
 <b>Final Result: </b>
 
 We have completed our simple challenge and the code is in a Github [repo](https://github.com/harshapraneeth/image_to_ascii) and here is a [demo](http://image2ascii.glitch.me/).
+
+If you are interested in different scales of the image check these out,
+
+- Image with 150 characters, 300 characters, 600 characters
+<img src="https://github.com/harshapraneeth/image_to_ascii/blob/8d4dc11ac78931b83e8efa18942e2f483ce63219/media/dua_sizes.jpg" height=300 />
+
+- To truly capture the detail in the image, let's look at the eye
+<img src="https://github.com/harshapraneeth/image_to_ascii/blob/8d4dc11ac78931b83e8efa18942e2f483ce63219/media/dua_eye.jpg" height=300 />
