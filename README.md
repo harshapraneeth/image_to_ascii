@@ -26,7 +26,7 @@ The language of choice is Javascript because it allows me to share the project a
 
   <img src="https://github.com/harshapraneeth/image_to_ascii/blob/7bdc50b03ade53811b0109816647c0a320974199/media/hattori_streched.png" style="height: 300px;" /> 
 
-- Mapping each pixel to character: This is straightforward. Let’s say we have n characters then we normalize the grayscale value from [0, 255] to [0, n-1]. And based on the normalized index `i`, we assign the `i`^th^ character to the pixel.
+- Mapping each pixel to character: This is straightforward. Let’s say we have n characters then we normalize the grayscale value from [0, 255] to [0, n-1]. And based on the normalized index `i`, we assign the `i`<sup>th</sup> character to the pixel.
 
   <img src="https://github.com/harshapraneeth/image_to_ascii/blob/7bdc50b03ade53811b0109816647c0a320974199/media/hattori_comparison.jpg" alt="hattori_comparison" style="height: 300px;" />
 
