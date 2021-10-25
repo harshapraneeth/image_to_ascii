@@ -125,13 +125,12 @@ function saveImage()
     const link = document.createElement("a");
     link.download = "image2ascii.png";
     link.innerHTML = "Download File";
-    link.href = output_canvas.toDataURL("image/png").replace("image/png", "image/octet-stream")
+    link.href = output_canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
     
     if (window.webkitURL == null) 
     {
         // Firefox requires the link to be added to the DOM
         // before it can be clicked.
-        link.href = window.URL.createObjectURL(blob);
         link.onclick = destroyClickedElement;
         link.style.display = "none";
         document.body.appendChild(link);
