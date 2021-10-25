@@ -86,6 +86,18 @@ const getFontRatio = () => {
 const to_grayscale = (r, g, b) => 0.21 * r + 0.72 * g + 0.07 * b;
 const to_ascii = (grayscale_value, n) => Math.ceil((n-1)*grayscale_value/255);
 
+function rescale(elem)
+{
+    var width = elem.offsetWidth;
+    var height = elem.offsetHeight;
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
+    var r = 1;
+    r = Math.min(1, Math.min(windowWidth / width, windowHeight / height));
+
+    elem.setAttribute("style", "display: flex; justify-content:center; zoom: "+r);
+}
+
 // --------- functions to download the converted image ---------
 
 function saveText() 
@@ -151,7 +163,6 @@ function init()
 
 function convert()
 {
-    pre_elem.setAttribute("style", "display: flex; justify-content:center;");
     const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
     const n = asciis.length;
 
@@ -171,15 +182,17 @@ function convert()
         text += "\n";
     }
 
+    pre_elem.setAttribute("style", "display: flex; justify-content:center;");
     pre_elem.textContent = text;
+    rescale(pre_elem);
 
     output_div.innerHTML = "<p style=\"font-size: 20px; text-align:center;\">Converting... Please wait.</p>";
 
     if(document.querySelector('input[name = output_type]:checked').value=="ascii")
     {
-        output_div.innerHTML = "<p style=\"font-size: 20px; text-align:center;\">All done. Copy and paste the text in a file.</p>";   
+        output_div.innerHTML = "<p style=\"font-size: 20px; text-align:center;\">All done. Copy and paste the text in a file.</p>"; 
     }
-    
+
     else
     {
         html2canvas(document.getElementById("ascii_output")).then(function(image_output) {
@@ -187,6 +200,8 @@ function convert()
             output_div.innerHTML = "<p style=\"font-size: 20px; text-align:center;\">All done. Zoom out to see or Right click on the image to save it.</p>";
             output_div.appendChild(image_output);
             output_canvas = image_output;
+
+            rescale(output_canvas);
         });
     }
 }
