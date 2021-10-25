@@ -1,0 +1,21 @@
+#inputs_div
+{
+    border-bottom: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#inputs_div div
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0px 5px;
+    padding: 5px;
+}
+
+button
+{
+    margin: 0px 5px;
+    padding: 5px;
+}
