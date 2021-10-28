@@ -46,6 +46,6 @@ If you are interested in different scales of the image check these out,
 
 And one more example,
 
-<img src="https://github.com/harshapraneeth/image_to_ascii/blob/d5e2050745648fd25c52e0810b89785a2c1b1240/media/killmonger_comparision.jpg" height=300 />
+<img src="https://github.com/harshapraneeth/image_to_ascii/blob/d5e2050745648fd25c52e0810b89785a2c1b1240/media/killmonger_comparision.jpg" width=1000 />
 
 
