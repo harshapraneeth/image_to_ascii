@@ -43,3 +43,9 @@ If you are interested in different scales of the image check these out,
 
 - To truly capture the detail in the image, let's look at the eye
 <img src="https://github.com/harshapraneeth/image_to_ascii/blob/8d4dc11ac78931b83e8efa18942e2f483ce63219/media/dua_eye.jpg" height=300 />
+
+And one more example,
+
+<img src="https://github.com/harshapraneeth/image_to_ascii/blob/d5e2050745648fd25c52e0810b89785a2c1b1240/media/killmonger_comparision.jpg" height=300 />
+
+
