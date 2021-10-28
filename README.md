@@ -39,10 +39,10 @@ We have completed our simple challenge and the code is in a Github [repo](https:
 If you are interested in different scales of the image check these out,
 
 - Image with 150 characters, 300 characters, 600 characters
-<img src="https://github.com/harshapraneeth/image_to_ascii/blob/8d4dc11ac78931b83e8efa18942e2f483ce63219/media/dua_sizes.jpg" height=300 />
+<img src="https://github.com/harshapraneeth/image_to_ascii/blob/8d4dc11ac78931b83e8efa18942e2f483ce63219/media/dua_sizes.jpg" />
 
 - To truly capture the detail in the image, let's look at the eye
-<img src="https://github.com/harshapraneeth/image_to_ascii/blob/8d4dc11ac78931b83e8efa18942e2f483ce63219/media/dua_eye.jpg" height=300 />
+<img src="https://github.com/harshapraneeth/image_to_ascii/blob/8d4dc11ac78931b83e8efa18942e2f483ce63219/media/dua_eye.jpg" />
 
 And one more example,
 
